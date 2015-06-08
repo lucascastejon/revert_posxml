@@ -1,0 +1,44 @@
+<aplicativoposxml xmlns="http://tempuri.org/posxml.xsd">
+	<pagina nome="principal">
+		<variavelint valor="10" variavel="1" />
+		<variavelstr valor="10" variavel="2" />
+		<system.backlight nivel="20" variavelretorno="$(1)" />
+		<chamafuncao nome="1" />
+		<funcao nome="1" >
+			<variavelint valor="10" variavel="1" />
+			<if operador="igual"  valor="10" variavel="$(1)" >
+				<variavelint valor="10" variavel="1" />
+			<else/>
+				<variavelint valor="10" variavel="1" />
+			</if>
+		</funcao>
+		<emv.settimeout segundos="333" variavelretorno="$(1)" />
+		<inttostring variavelint="$(1)" variavelstr="$(2)" />
+		<somastring valor1="111" valor2="222" variaveldestino="$(2)" />
+		<imprima mensagem="$(2)" />
+		<emv.adddata parametro="par" tipo="tip" valor="val" variavelretorno="$(1)" />
+		<emv.inittransaction variavelretorno="$(1)" />
+		<emv.getinfo parametro="par" tipo="tip" valor="val" />
+		<emv.processtransaction ctls="11" variavelretorno="$(1)" />
+		<editaarquivo chave="key" nomearquivo="arq" valor="val" />
+		<preconexao variavelstatus="$(1)" />
+		<string.tohex string="aaa" variavelretorno="$(2)" />
+		<string.length valor="$(2)" variavelretorno="$(1)" />
+		<network.send buffer="buf" tamanho="333" variavelretorno="$(1)"/>
+		<network.receive tamanhomaximo="222" variavelbuffer="$(2)" variavelbytesrecebidos="rec" variavelretorno="$(1)" />
+		<display coluna="c" linha="l" mensagem="m"/>
+		<esperatecla/>
+		<string.fromhex string="str" variavelretorno="$(2)" />
+		<emv.finishtransaction variavelretorno="$(1)"/>
+		<emv.removecard variavelretorno=""/>
+		<desligamodem/>
+		<string.substring length="111" start="222" string="SSS" variavelretorno="$(2)" />
+		<stringtoint variavelint="$(1)" variavelstr="$(2)"/>
+		<display coluna="col" linha="lin" mensagem="msg"/>
+		<imprimagrande mensagem="msg" />
+		<digitainteiro coluna="col" linha="lin" maximo="max" mensagem="msg" minimo="min" variavel="$(1)" />
+		<digitaopcao coluna="col" linha="lin" maximo="max" mensagem="msg" minimo="min" variavel="$(1)" />
+		<digitavalor coluna="col" linha="lin" mensagem="msg" variavel="$(1)" />
+		<digitaformato coluna="col" formato="form" linha="lin" mensagem="msg" variavel="$(1)" />
+		<desligamodem/>
+		
